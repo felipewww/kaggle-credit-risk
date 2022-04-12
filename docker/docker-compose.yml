@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  std-py:
+    container_name: std-py
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command:
+      - /entrypoint.sh
+    volumes:
+      - ../:/app
